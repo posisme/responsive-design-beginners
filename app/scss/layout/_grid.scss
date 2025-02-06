@@ -1,11 +1,14 @@
-@use "../util" as u;
+@use '../util' as u;
 .grid {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap:40px;
-
-    @media (min-width:u.$minwidth){
+    // max-width: 1200px;
+    width:min(100% - 40px,1000px);
+    margin-inline: auto;
+    
+    @include u.breakpoint(large){
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
     }
