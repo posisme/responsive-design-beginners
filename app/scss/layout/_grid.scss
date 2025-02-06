@@ -19,8 +19,21 @@
 
     &__main {
         background-color: hsl(240, 96%, 32%);
+        @include u.breakpoint(medium){
+            background-color: orange;
+        }
+        @include u.breakpoint(large){
+            background-color: green;
+        }
     }
     &__sidebar {
         background-color: hsl(300, 95%, 29%);
+        @include u.breakpoint-down(medium){
+            text-align: center;
+        }
+        @include u.breakpoint-down(small){
+            text-align: right;
+        }
     }
+    
 }
