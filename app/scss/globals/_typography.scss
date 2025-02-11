@@ -1,4 +1,4 @@
-
+@use "../util" as u;
 h1,
 h2,
 h3 {
@@ -8,12 +8,17 @@ h3 {
 }
 
 h1{
-  font-size:clamp(28px, 16px + 2vw, 50px);
+  font-size:clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+  
 
+}
+h2{
+  font-size: clamp(u.rem(25), u.rem(16) + 1vw, u.rem(30));
 }
 
 p {
   margin-top: 0;
+  font-size:1rem;
 }
 
 a,
