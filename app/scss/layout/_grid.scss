@@ -1,4 +1,10 @@
 @use '../util' as u;
+
+%widget {
+    padding: u.rem(16);
+    border:1px solid black;
+}
+
 .grid {
     display:grid;
     grid-template-columns: 1fr;
@@ -14,7 +20,7 @@
     }
 
     &__main, &__sidebar {
-        padding:u.rem(40);
+        //padding:u.rem(40);
     }
 
     &__main {
@@ -27,7 +33,7 @@
         }
     }
     &__sidebar {
-        background-color: hsl(300, 95%, 29%);
+        
         @include u.breakpoint-down(medium){
             text-align: center;
         }
@@ -35,5 +41,19 @@
             text-align: right;
         }
     }
-    
+    &__widget {
+        background-color: hsl(300, 95%, 29%);
+        padding: u.rem(16);
+
+        &.green{
+            
+            background-color: hsl(120, 100%, 25%);
+        }
+        &.red{
+            background-color: hsl(0, 100%, 25%);
+        }  
+        &.blue{
+            background-color: hsl(256, 100%, 25%);
+        }
+    }
 }

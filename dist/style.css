@@ -65,9 +65,6 @@ a:active {
     grid-template-rows: auto;
   }
 }
-.grid__main, .grid__sidebar {
-  padding: 2.5rem;
-}
 .grid__main {
   background-color: hsl(240, 96%, 32%);
 }
@@ -81,9 +78,6 @@ a:active {
     background-color: green;
   }
 }
-.grid__sidebar {
-  background-color: hsl(300, 95%, 29%);
-}
 @media (max-width: 56.24875em) {
   .grid__sidebar {
     text-align: center;
@@ -93,4 +87,17 @@ a:active {
   .grid__sidebar {
     text-align: right;
   }
+}
+.grid__widget {
+  background-color: hsl(300, 95%, 29%);
+  padding: 1rem;
+}
+.grid__widget.green {
+  background-color: hsl(120, 100%, 25%);
+}
+.grid__widget.red {
+  background-color: hsl(0, 100%, 25%);
+}
+.grid__widget.blue {
+  background-color: hsl(256, 100%, 25%);
 }/*# sourceMappingURL=style.css.map */
