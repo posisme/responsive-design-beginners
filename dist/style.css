@@ -15,6 +15,7 @@ body {
   font-family: "Source Sans 3", serif;
   background-color: var(--backgound-color);
   color: var(--text-color);
+  margin-block-end: 50vh;
 }
 
 .visually-hidden {
@@ -81,6 +82,7 @@ a:active {
   --main-bg: hsl(0, 0%, 100%);
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
+  --header-bg: hsl(232, 58%, 55%);
   --hero-bg: hsl(232, 58%, 55%);
   --button-primary-bg: hsl(180, 100%, 42%);
   --button-primary-text: hsl(233, 14%, 25%);
@@ -101,4 +103,29 @@ a:active {
 .wrapper {
   width: min(100% - 3rem, 75rem);
   margin-inline: auto;
+}
+
+.topnav {
+  background-color: var(--header-bg);
+}
+.topnav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav__links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.topnav__item {
+  list-style-type: none;
+}
+.topnav__link {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
