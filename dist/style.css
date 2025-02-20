@@ -112,10 +112,14 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 20px;
+}
+.topnav__logo {
+  display: block;
 }
 .topnav__links {
   display: flex;
-  align-items: center;
+  gap: 40px;
   margin: 0;
   padding: 0;
 }
