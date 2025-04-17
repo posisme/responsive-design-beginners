@@ -1,0 +1,43 @@
+@use "../util" as u;
+
+.footer{
+  &__wrapper{};
+  &__logo{
+    
+  };
+  &__homelink{
+    display:block;
+    width:fit-content;
+  };
+  &__logo-image{
+    
+    width: u.rem(70);
+    margin-block-end:u.rem(10);
+    @include u.breakpoint(large) {
+      width: u.rem(128);
+    }
+    
+  };
+  &__copyright{
+    line-height: 1;
+  };
+  
+  &__column{};
+  &__column-title{
+    font-size:u.rem(22);
+    line-height:1.1;
+    margin-block-end:u.rem(18);
+  }
+  &__links{};
+  &__item{};
+  &__link{
+    display:inline-block;
+    font-size:u.rem(18);
+    line-height: 1;
+    margin-block-end: u.rem(10);
+    color:var(--text-dark);
+    &:hover{
+      color:var(--text-link-hover);
+    }
+  };
+}

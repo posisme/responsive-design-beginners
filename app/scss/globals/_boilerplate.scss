@@ -1,6 +1,5 @@
 @use "../util" as u;
 
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -17,24 +16,49 @@ body {
     padding: 0;
     font-family: u.$font;
     background-color: var(--backgound-color);
-    color: var(--text-color);
-    margin-block-end:50vh;
+    color: var(--text-dark);
+    margin-block-end: 50vh; // temporary, remove after website is complete
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure,
+blockquote {
+  margin: 0;
+}
+
+header ul,footer ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style-type: none;
+    }
+}
 
 .visually-hidden {
   position: absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
   &:focus {
     left: 0;
-    height: auto;
     width: auto;
-    background: hsl(0, 0%, 100%);
-    padding: 0.5rem;
+    height: auto;
+    background-color: #fff;
+    padding: .5rem;
     border: 1px solid;
+  }
+}
+
+.hover-fade{
+  &:hover{
+    opacity:.9;
   }
 }
